@@ -13,6 +13,7 @@
 		19355B8A1FABEB5600A33614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19355B891FABEB5600A33614 /* Assets.xcassets */; };
 		19355B8D1FABEB5600A33614 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19355B8B1FABEB5600A33614 /* LaunchScreen.storyboard */; };
 		19355B901FABEB5600A33614 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19355B8F1FABEB5600A33614 /* main.m */; };
+		1992D37D1FAC14970048B4AE /* MMInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1992D37C1FAC14970048B4AE /* MMInputView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		19355B8C1FABEB5600A33614 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19355B8E1FABEB5600A33614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19355B8F1FABEB5600A33614 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1992D37B1FAC14970048B4AE /* MMInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMInputView.h; sourceTree = "<group>"; };
+		1992D37C1FAC14970048B4AE /* MMInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMInputView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,7 @@
 		19355B741FABEB5600A33614 = {
 			isa = PBXGroup;
 			children = (
+				1992D37A1FAC0B590048B4AE /* MMKeyBoard */,
 				19355B7F1FABEB5600A33614 /* keyboardUI-iOS */,
 				19355B7E1FABEB5600A33614 /* Products */,
 			);
@@ -69,6 +73,15 @@
 				19355B8F1FABEB5600A33614 /* main.m */,
 			);
 			path = "keyboardUI-iOS";
+			sourceTree = "<group>";
+		};
+		1992D37A1FAC0B590048B4AE /* MMKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				1992D37B1FAC14970048B4AE /* MMInputView.h */,
+				1992D37C1FAC14970048B4AE /* MMInputView.m */,
+			);
+			path = MMKeyBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19355B851FABEB5600A33614 /* ViewController.m in Sources */,
+				1992D37D1FAC14970048B4AE /* MMInputView.m in Sources */,
 				19355B901FABEB5600A33614 /* main.m in Sources */,
 				19355B821FABEB5600A33614 /* AppDelegate.m in Sources */,
 			);

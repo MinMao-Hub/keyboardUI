@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
-
+#import "MMInputView.h"
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *tfd1;
+
+@property (weak, nonatomic) IBOutlet UITextField *tfd2;
+
 
 @end
 
@@ -17,12 +21,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    MMInputView *inputView = [[MMInputView alloc] initWithFrame:CGRectZero];
+    
+    _tfd1.inputView = inputView;
+    
+    
 }
 
 
