@@ -22,12 +22,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    MMInputView *inputView = [[MMInputView alloc] initWithFrame:CGRectZero];
+    MMInputView *inputView = [[MMInputView alloc] initWithStyle:MMKeyBoardStyleSystem andType:MMKeyBoardTypeNumerical];
     
     _tfd1.inputView = inputView;
     
     
 }
 
+- (IBAction)singleTap:(id)sender {
+    
+    [self.view endEditing:YES];
+}
 
 @end
